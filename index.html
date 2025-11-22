@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modais de Transporte - Imersão Dev com Google Gemini 10ª Edição</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Modais de Transporte</h1>
+            <button id="darkModeToggle" aria-label="Alternar Modo Escuro">
+                <i class="fas fa-moon"></i> 
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#modal-rodoviario">Rodoviário</a></li>
+                <li><a href="#modal-ferroviario">Ferroviário</a></li>
+                <li><a href="#modal-aereo">Aéreo</a></li>
+                <li><a href="#modal-hidroviario">Hidroviário</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <div class="search-area">
+                <input type="text" id="searchInput" placeholder="Buscar modais (ex: Aéreo, Rodoviário)...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            
+            <section id="modal-rodoviario" class="content-section">
+                <article class="modal-card" data-modal="Rodoviário">
+                    <h2>🛣️ Modal Rodoviário</h2>
+                    <p>É o modal mais utilizado no Brasil, caracterizado pelo transporte de pessoas e mercadorias por estradas e rodovias. Oferece alta flexibilidade de rotas e entrega porta a porta, mas possui alto custo e é mais suscetível a congestionamentos e acidentes.</p>
+                    <span class="tag">Flexibilidade</span>
+                    <span class="tag">Alto Custo</span>
+                </article>
+            </section>
+
+            <section id="modal-ferroviario" class="content-section">
+                <article class="modal-card" data-modal="Ferroviário">
+                    <h2>🚂 Modal Ferroviário</h2>
+                    <p>Ideal para o transporte de grandes volumes de carga a longas distâncias (principalmente granéis minerais e agrícolas). Tem baixo custo operacional e é menos poluente, mas peca pela baixa flexibilidade e pela necessidade de transbordo (intermodalidade).</p>
+                    <span class="tag">Baixo Custo</span>
+                    <span class="tag">Grandes Volumes</span>
+                </article>
+            </section>
+
+            <section id="modal-aereo" class="content-section">
+                <article class="modal-card" data-modal="Aéreo">
+                    <h2>✈️ Modal Aéreo</h2>
+                    <p>Modal de altíssima velocidade, perfeito para mercadorias de alto valor agregado, perecíveis ou de urgência. Possui o custo mais elevado e é limitado pela capacidade de carga e por condições climáticas.</p>
+                    <span class="tag">Alta Velocidade</span>
+                    <span class="tag">Alto Custo</span>
+                </article>
+            </section>
+
+            <section id="modal-hidroviario" class="content-section">
+                <article class="modal-card" data-modal="Hidroviário">
+                    <h2>🚢 Modal Hidroviário</h2>
+                    <p>Utiliza rios, lagos e mares para o transporte. É o modal mais adequado para volumes gigantescos e de menor urgência, como petróleo, minério de ferro e grãos, apresentando o menor custo por tonelada transportada.</p>
+                    <span class="tag">Gigantescos Volumes</span>
+                    <span class="tag">Baixíssimo Custo</span>
+                </article>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Modais de Transporte. Desenvolvido para a Imersão Dev com Google Gemini 10ª Edição.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
